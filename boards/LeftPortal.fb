@@ -1,0 +1,30 @@
+board name=Portal1 gravity = 5.0
+
+# define a ball
+ball name=BallC x=1.8 y=4.5 xVelocity=10.4 yVelocity=10.3 
+ball name=BallD x=2.8 y=6.5 xVelocity=10.4 yVelocity=4.3 
+
+# define some bumpers
+squareBumper name=Square x=0 y=10
+squareBumper name=SquareB x=1 y=10
+
+
+circleBumper name=Circle x=4 y=3
+
+
+# define some flippers
+  leftFlipper name=FlipL x=10 y=7 orientation=0 
+rightFlipper name=FlipR x=12 y=7 orientation=0
+
+ 
+keyup key= left action= FlipL
+keyup key= right action = FlipR
+
+portal name=Beta x=19 y=3 otherBoard=Portal2 otherPortal=Gamma
+
+# define an absorber to catch the ball
+ absorber name=Abs x=10 y=17 width=10 height=2 
+
+
+# make the absorber self-triggering
+ fire trigger=Abs action=Abs 

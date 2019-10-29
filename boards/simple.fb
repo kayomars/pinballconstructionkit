@@ -1,0 +1,4 @@
+board name=Simple gravity = 10 friction1 = 0.01 friction2 = 0
+
+# define a ball
+ball name=BallA x=1.25 y=1.25 xVelocity=-20 yVelocity=0
