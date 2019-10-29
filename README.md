@@ -1,4 +1,4 @@
-# pinballconstructionkit
+# Flingball - A Pinball Construction Kit
 
 Flingball is a Java based pinball construction kit that allows multiple users to play pinball over a network, connected with each other through a server.
 
